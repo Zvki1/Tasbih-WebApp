@@ -9,7 +9,7 @@ body{
         margin: 0; /* Pour enlever les marges par défaut */
         height: 100vh; /* Pour s'assurer que le corps occupe toute la hauteur de la fenêtre */
         background-repeat: no-repeat;
-        overflow: hidden; 
+/*         overflow: hidden;  */
 }
 .main-container{
     display: flex;
