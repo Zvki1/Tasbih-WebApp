@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+        
+        background: linear-gradient(to bottom, #006754,#87D1A4);
+        margin: 0; /* Pour enlever les marges par défaut */
+        height: 100vh; /* Pour s'assurer que le corps occupe toute la hauteur de la fenêtre */
+        background-repeat: no-repeat;
+        /* overflow: hidden;  */
+}
+.main-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    margin-top: 9vh;
+    gap:34px ;
+    
+}
+h1{
+    font-family:'poppins',sans-serif;
+    color: white;
+}
+.cards-container{
+    /* background-color: rgb(46, 12, 195); */
+   flex-direction: column;
+   gap: 34px;
+    width:  65%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Ajoutez cette ligne */
+}
+.card{
+background-color: white;
+width: 100%;
+
+height: 217px;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: space-evenly;
+border-radius: 23px;
+padding:0% 4%;
+box-shadow: 0px 4px 4px rgba(0, 0.5, 0, 0.5);
+
+}
+.name-reset{
+  
+    width: 100%;
+   height: fit-content;
+    position: relative;
+    
+    
+}
+.reload{
+    z-index: 1;
+    position: absolute;
+    right: 5px;
+    bottom: -35px;   
+    
+}
+/* le paragraphe */
+.name-reset p{
+  position: absolute;
+  bottom: -35px;
+
+     z-index: 0;
+    font-size:1.5em;
+    font-weight:600;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    text-align: center;
+    width: 100%;
+}
+.occ{
+    font-size: 5em;
+    font-family: 'poppins';
+    font-weight: 600;
+    position: relative;
+    top:13px
+}
+.button{
+    width: 70%;
+    height: 50px;
+    background-color: #006754;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover{
+    background-color: #519a6e;
+}
+@media (min-width: 780px) {
+  .cards-container{
+    max-width: 40%;
+  }
+  }
+  
